@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">Vipassana Lekha</string>
+    <string name="writer">Amar</string>
+
+    <string name="logo">Vipassana Anubhava</string>
+    <string name="logo_description">Logo</string>
+    <string name="logo_writer">Amar</string>
+    <string name="logo_year">2026</string>
+
+    <string name="a">Monkey Mind</string>
+    <string name="a_description">
+        ਕੋਈ ਹੋਰ ਚੀਜ਼ ਨਹੀਂ ਜਿਵੇਂ ਕਿ "ਜ਼ਿਆਦਾ ਇਛਾਵਾਂ" ਜੋ ਕਿ ਬਹੁਤ ਜ਼ਿਆਦਾ ਦੁੱਖ ਦਾ ਕਾਰਨ
+        ਜ਼ਿਆਦਾ ਇਛਾਵਾਂ ਮਤਲਬ ਜ਼ਿਆਦਾ ਵਿਕਲਪ ਜਾਂ ਸੰਸਕਾਰ
+        ਜ਼ਿਆਦਾ ਵਿਕਲਪ/ਸੰਸਕਾਰ ਮਤਲਬ ਜ਼ਿਆਦਾ ਸਮਾਂ ਅਤੇ ਜ਼ਿਆਦਾ ਊਰਜ਼ਾ ਦੀ ਜ਼ਰੂਰਤ |
+
+        ਤਾਂ ਅਧੂਰੀਆਂ ਇੱਛਾਵਾਂ ਪੁਨਰ ਜਨਮ ਦਾ ਕਾਰਨ ਜਾਂ
+        ਸਰਲਤਾ ਅਨੁਸਾਰ, ਅਨੇਕ ਅਧੂਰੇ ਕਰਮ ਜਾਂ ਅਨੇਕ ਅਵਿਕਾਸੀਲ ਮਾਨਸਿਕ, ਸਰੀਰਕ ਅਤੇ ਮੌਖਿਕ ਕਰਮ
+        ਅਵਿਕਾਸੀਲ ਮਾਨਸਿਕ ਕਰਮ ਤਾਂ ਅਵਿਕਾਸੀਲ਼ ਚਿੱਤ |
+
+        ਜ਼ਿਆਦਾ ਇੱਛਾਵਾਂ ਦੀ ਹਾਲਤ ਵਿੱਚ ਚਿੱਤ ਇੱਕ ਬਾਂਦਰ ਦੀ ਤਰ੍ਹਾਂ
+        ਜੋ ਕਿ ਇੱਕ ਚਿੱਤ ਦੇ ਵਿਸ਼ੇ (ਉਪਾਅ ਜਾਂ ਧਰਮ) ਤੋਂ ਦੂਜੇ ਚਿੱਤ ਦੇ ਵਿਸ਼ੇ
+        ਜਿਵੇਂ ਇੱਕ ਬਾਂਦਰ ਇੱਕ ਟਹਿਣੀ ਤੋਂ ਦੂਜੀ ਟਹਿਣੀ
+        ਤਾਂ ਨਾ ਸੰਤੋਖ ਅਤੇ ਨਾ ਹੀ ਚੈਨ-ਸ਼ਾਂਤੀ।
+    </string>
+    <string name="a_year">2026</string>
+
+    <string name="b">Monkey Mind</string>
+    <string name="b_description">
+        ਜਿਵੇਂ ਕਿ ਬਰੁਸ਼ ਲੀ ਦੁਆਰਾ, ਚੀਨੀ ਯੁੱਧ ਕਲਾ ਕੁੰਗ ਫੂ ਬਾਰੇ
+        ੧੦੦ ਲੱਤ ਦੇ ਵਾਰ ਦੇ ਤਰੀਕਿਆਂ ਦਾ ੧ ਬਾਰ ਅਭਿਆਸ ਨਾਲੋਂ
+        ੧ ਲੱਤ ਦੇ ਵਾਰ ਦਾ ੧੦੦ ਵਾਰ ਅਭਿਆਸ ਚੰਗਾਂ ਜਾਂ
+        ਜ਼ਿਆਦਾ ਪ੍ਰਭਾਵਸ਼ਾਲੀ, ਦੁਸ਼ਮਣ ਲਈ ਜ਼ਿਆਦਾ ਖਤਰਨਾਕ ਜਾਂ ਜ਼ਿਆਦਾ ਡਰ ਦਾ ਕਾਰਨ |
+
+        ਸੋ ਇੱਕ "ਸਰਬੱਤ ਦੀ ਭਲਾਈ ਅਤੇ ਖੁਸ਼ੀ" ਦੀ ਇੱਛਾ ਹੀ ਕਾਫ਼ੀ
+        ਫਿਰ ਇੱਛਾ ਦਾ ਨਿਰੰਤਰ ਵਿਕਾਸ਼, ਨਿਰਵਾਣ ਦੀ ਪ੍ਰਾਪਤੀ ਦਾ ਕਾਰਨ
+        ਕਿਉਂਕਿ ਅਜਿਹੀ ਇੱਛਾ ਹੀ ਗੁਰੂ ਦੀ ਸਲਾਹ ਦੀ ਪਾਲਣਾ ਦਾ ਕਾਰਨ
+        ਅਤੇ ਹੋਰ ਵੀ ਬਹੁਤ ਜ਼ਿਆਦਾ ਵਿਕਾਸ਼ ਦਾ ਕਾਰਨ ਜਿਵੇਂ ਵਿਪਾਸਨਾ, ਸਮਥ ਆਦਿ ।
+
+        ਜ਼ਿਆਦਾ ਇੱਛਾਵਾਂ ਕਾਰਨ ਅਧੂਰੀਆਂ ਇੱਛਾਵਾਂ ਸਿਰਫ਼ ਪੁਨਰ ਜਨਮ ਦਾ ਕਾਰਨ ਨਹੀਂ
+        ਵਰਤਮਾਨ ਜਨਮ ਵਿੱਚ ਅਦੱਖਤਾ (ਅਕੁਸ਼ਲਤਾ) ਦਾ ਕਾਰਨ
+        ਕਿਸੇ ਪੁਨਰ ਜਨਮ ਵਿੱਚ ਸ਼ਾਇਦ ਗਰੀਬੀ ਦਾ ਕਾਰਨ
+        ਫਲਸਰੂਪ ਸਹੀ ਧਰਮ ਤੋਂ ਦੂਰੀ ਦਾ ਕਾਰਨ।
+    </string>
+    <string name="b_year">2026</string>
+
+    <string name="c">Meditation: Best Practice (One Reason)</string>
+    <string name="c_description">
+        संयुक्त निकाय में सुत्त १.१ ओघतरणसुत्तं (बाढ़ का निपटारा),
+        कुछ शब्द गौतमबुद्ध की निर्वाण की प्राप्ति के बारे में।
+        क्लेशों की बाढ़ के निपटारे के बारे मेें, न निष्क्रिय अवस्था से और न संघर्ष से।
+        बिल्कुल ध्यान के अभ्यास से क्योंकि श्वास का मन शिकार,
+        स्मृति आदि न तो निष्क्रिय अवस्था और न ही संघर्ष।
+        निष्क्रिय अवस्था नहीं क्योंकि श्वास का मन शिकार, स्मृति आदि।
+        संघर्ष नहीं क्योंकि सिर्फ श्वास का मन शिकार, स्मृति आदि।
+        निष्क्रिय अवस्था नहीं क्योंकि अकिर्यावाद नहीं, संघर्ष नहीं क्योंकि कोई कर्म नहीं।
+        निष्क्रिय अवस्था के कारण बाढ़ के पानी के अंदर स्थल में मौत का खतरा और संघर्ष बाढ़ के पानी में काफी नहीं।
+        निष्क्रिय अवस्था कुशलता के प्रति अकिर्यावाद और संघर्ष भव, उपादान, तृष्णा आदि कुशलता के प्रति किर्यावाद।
+    </string>
+    <string name="c_year">2026</string>
+
+    <string name="d">When the failure of Loving-kindness</string>
+    <string name="d_description">
+        Happiness, peace, health, strength and blessing continuum
+        But instead of the development of the feelings of metta or the loving-kindness
+        When expectations, in return for the same, for happiness
+        Or expectation for pleasure, or happiness
+        The failure of loving-kindness and instead the orientation of the mind towards bhog bilas (self-indulgence)
+        Not a goal of holy life, and even a failure in ordinary happiness
+        And the outcomes of ill will, the outcomes of hatred
+        And such outcomes, none other than some opportunity
+        Opportunity for the suppression or cutting away of hatred, or ill will
+        Moreover, very common in the world, something like hatred,
+        Common, when the vicious cycle of identity view in the world Where yearning and chase for the benefits of such a short time, as the span of identity, the span of life
+        Because identity, not beyond death, and happiness for such a small span, a pain
+        In such circumstances, when determination for the development of metta
+        But unfavourable circumstances, setbacks of hatred, and difficult persistence
+        Then, none other than Khanti (patience), of any use
+        Development of patience, with mindfulness of breathing or analysis of the dhatu
+        Or simply through the other 12 Vipassanā meditation practices.
+    </string>
+    <string name="d_year">2026</string>
+
+    <string name="e">Identity view and Interface</string>
+    <string name="e_description">
+        For the prevention of complexities overhead, for a good contact and sharing of information
+        Between two systems need for an interface
+        The purpose of identity and identity view, in similarity with an interface
+        Identity or identity view in terms of interface too, not a good one
+        From the beginning of everything till now, identity without any breaks
+        Without any breaks, in terms of causal force
+        Previous identity, a cause of kamma which in terms of cause for
+        further identity
+        Halt to progress towards Nibbana with an illusion of contact in between
+        The contact of the illusion of identity view
+        The vipassanā practice of analysis of rūpa dhātus, a hand for help
+        Less burden, direct contact, and no false impression
+        Fulfilment of purpose, direct realization of truth
+        Or a good way and exact information communication
+        Like a forward push to the boat either by an engine or manual
+        paddle for a manual boat
+        In the ocean on the path to Nibbāna
+    </string>
+    <string name="e_year">2026</string>
+
+    <string name="f">Righteousness in the Ocean</string>
+    <string name="f_description">
+        ਤ੍ਰਿਸ਼ਨਾ ਦੇ ਕਾਰਨ ਹੀ ਲੇਖੇ-ਜੋਖੇ ਦਾ ਕਰਜ਼
+        ਭਾਵ ਤ੍ਰਿਸ਼ਨਾ ਦੇ ਕਾਰਨ ਹੀ ਨੇਕੀ ਦੀ ਕਮਾਈ ਦੇ ਨਤੀਜੇ ਦੀ ਲਾਲਸਾ
+        ਅਤੇ ਤ੍ਰਿਸ਼ਨਾ ਦੇ ਕਾਰਨ ਹੀ ਨੇਕੀ ਦੇ ਕਰਜ਼ ਦੇ ਨਿਪਟਾਰੇ ਦੀ ਲਾਲਸਾ
+        ਜਦੋਂ ਤ੍ਰਿਸ਼ਨਾ ਦਾ ਸਥਾਈ ਰੂਪ ਵਿੱਚ ਅੰਤ ਤਾਂ ਹਰ ਦੁੱਖ ਦਾ ਅੰਤ
+        ਮਾਤਾ-ਪਿਤਾ ਦੇ ਕਰਜ਼ ਦਾ ਨਿਪਟਾਰਾ ਕਿਸੇ ਵੀ ਦੁਨਿਆਵੀ ਵਸਤੂ ਨਾਲ ਸੰਭਵ ਨਹੀਂ
+        ਭਾਵ ਬੇਹੱਦ ਕਮਾਈ, ਹਰ ਰੋਜ਼ ਮਸਾਜ਼, ਆਦਿ ਅਤੇ ਸਰਵਣ ਪੁੱਤਰ ਵਾਂਗ ਵੀ ਸੰਭਵ ਨਹੀਂ
+        ਪਰ ਜੇਕਰ ਮਾਤਾ-ਪਿਤਾ ਲਈ ਸੱਚ ਦਾ ਰਸਤਾ ਭਾਵ ਨਿਰਵਾਣ ਪ੍ਰਾਪਤੀ ਜਾਂ ਤ੍ਰਿਸ਼ਨਾ ਦੇ ਅੰਤ ਦਾ ਕਾਰਨ
+        ਤਾਂ ਕਰਜ਼ ਤੋਂ ਵੀ ਜ਼ਿਆਦਾ ਕੀਮਤ ਦਾ ਨਿਪਟਾਰਾ
+        ਪਰ ਜੇ ਨੇਕੀ ਦਾ ਮੈਂ-ਕਰਨ, ਮੇਰਾ-ਕਰਨ ਜਾਂ ਆਤਮ ਦੀ ਦ੍ਰਿਸ਼ਟੀ
+        ਤਾਂ ਕੋਈ ਨੇਕੀ ਨਹੀਂ ਬਲਕਿ ਵਪਾਰ
+        ਪਰ ਜੇ ਵਪਾਰ ਵੀ ਨੇਕੀ ਦੇ ਇਰਾਦੇ ਨਾਲ
+        ਭਾਵ ਜਿਵੇਂ ਕੋਈ ਵਪਾਰ ਲੋਕਾਂ ਦੀ ਸੇਵਾ ਲਈ
+        ਅਤੇ ਵਪਾਰ ਦੀ ਕਮਾਈ ਦੀ ਵਰਤੋਂ ਅਜਿਹੇ ਵਪਾਰ ਦੇ ਵਿਕਾਸ ਲਈ
+        ਜਾਂ ਜਿਵੇਂ ਕਪੜਿਆਂ ਦੀ ਸਫ਼ਾਈ ਦੌਰਾਨ, ਕੋਈ ਮਹਿਲਾ ਦੁਆਰਾ ਮੱਛੀਆਂ ਦੀ ਭਲਾਈ ਲਈ ਸਿਰਫ਼ ਝੱਗ ਦਾ ਵੀ ਦਾਨ
+        ਤਾਂ ਨੇਕੀ ਦਰਿਆ ਵਿੱਚ ਭਾਵ ਕੋਈ ਮੈਂ-ਕਰਨ ਜਾਂ ਮੇਰਾ-ਕਰਨ ਨਹੀਂ
+        ਅਤੇ ਕੋਈ ਤ੍ਰਿਸ਼ਨਾ ਜਾਂ ਕਰਜ਼ ਦਾ ਕਾਰਨ ਨਹੀਂ
+        ਪਰ ਅਜਿਹਾ ਨਹੀਂ ਕਿ ਤ੍ਰਿਸ਼ਨਾ ਦਾ ਅੰਤ ਨਿਰਵਾਣ ਦੁਆਰਾ ਹੀ ਸੰਭਵ
+        ਤ੍ਰਿਸ਼ਨਾ ਦਾ ਸਥਾਈ ਰੂਪ ਵਿੱਚ ਅੰਤ ਨਿਰਵਾਣ ਉਪਰੰਤ ਹੀ ਸੰਭਵ
+        ਪਰ ਤ੍ਰਿਸ਼ਨਾ ਦਾ ਅਸਥਾਈ ਰੂਪ ਵਿੱਚ ਅੰਤ ਵਿਪਾਸਨਾ ਧਿਆਨ ਦੁਆਰਾ ਸੰਭਵ
+        ਵਿਪਾਸਨਾ ਧਿਆਨ, ਸਮਥ ਧਿਆਨ ਦੇ ਸਹਾਰੇ ਨਾਲ ਹੀ ਨਿਰਵਾਣ ਦਾ ਰਸਤਾ
+        ਵਿਪਾਸਨਾ ਧਿਆਨ ਦੀ ਸਥਾਪਨਾ ੧੪ ਤਰ੍ਹਾਂ ਦੇ ਵਿਪਾਸਨਾ ਅਭਿਆਸ ਨਾਲ ਸੰਭਵ |
+    </string>
+    <string name="f_year">2026</string>
+
+    <string name="g">Past</string>
+    <string name="g_description">
+        ਜਦੋਂ ਕਿਸੇ ਕ੍ਰਿਤ੍ਰਿਮ ਬੁੱਧੀਮੱਤ (AI) ਮਾਡਲ ਦੁਆਰਾ ਇੱਕ ਹੀ ਸੈਸ਼ਨ ਵਿੱਚ ਜ਼ਿਆਦਾ ਸਵਾਲ-ਜਵਾਬ ਦਾ ਸੰਗ੍ਰਹਿ ਤਾਂ ਅਟਕਣ ਦੀ ਜ਼ਿਆਦਾ ਸਮੱਸਿਆ।
+        ਕੁਝ ਸਮਾਨ ਹੀ ਹਰ ਪ੍ਰਣਾਲੀ ਦੇ ਸੰਦਰਭ ਵਿੱਚ |
+        ਕੁਝ ਸਮਾਨ ਹੀ ਮੈਂ-ਕਰਨ, ਮੇਰਾ-ਕਰਨ ਦੇ ਸੰਦਰਭ ਵਿੱਚ।
+        ਸੱਪ ਦੁਆਰਾ ਵਾਰ-ਵਾਰ ਕੰਜ ਦਾ ਤਿਆਗ, ਸਮਾਨ ਰੂਪ ਵਿੱਚ ਅਤੀਤ ਦਾ ਵਾਰ-ਵਾਰ ਤਿਆਗ ਵੀ ਜ਼ਰੂਰੀ|
+        ਭਾਵ ਮੈਂ-ਕਰਨ, ਮੇਰਾ-ਕਰਨ ਦਾ ਵਾਰ-ਵਾਰ ਵਿਕਾਸ ਜਿਵੇਂ ਕਿਸੇ ਰੁੱਖ ਦੀਆਂ ਟਾਹਣੀਆਂ ਦਾ ਵਾਰ-ਵਾਰ ਵਿਕਾਸ।
+        ਮੈਂ-ਕਰਨ, ਮੇਰਾ-ਕਰਨ ਜਾਂ ਅਤੀਤ ਦਾ ਵਾਰ-ਵਾਰ ਤਿਆਗ "ਸਮਥ" ਧਿਆਨ ਦੁਆਰਾ ਸੰਭਵ,
+        ਅਤੇ ਮੈਂ-ਕਰਨ, ਮੇਰਾ-ਕਰਨ ਭਾਵ ਅਤੀਤ ਦਾ ਸਦੀਵੀ ਅੰਤ ਵਿਪਾਸਨਾ ਧਿਆਨ ਨਾਲ ਸੰਭਵ।
+        ਸਮਥ ਬਿਨਾਂ ਕੋਈ ਵਿਪਾਸਨਾ ਨਹੀਂ|
+    </string>
+    <string name="g_year">2026</string>
+
+    <string name="prev_button">Previous</string>
+    <string name="nex_button">Next</string>
+
+    <string name="meta_bg_color">Gray</string>
+    <string name="meta_bg_border">Null</string>
+
+    <string name="pic_frame_border_len">1.dp</string>
+    <string name="pic_frame_border_color">Black</string>
+</resources>
