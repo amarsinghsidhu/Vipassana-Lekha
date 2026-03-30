@@ -143,10 +143,4 @@
 
     <string name="prev_button">Previous</string>
     <string name="nex_button">Next</string>
-
-    <string name="meta_bg_color">Gray</string>
-    <string name="meta_bg_border">Null</string>
-
-    <string name="pic_frame_border_len">1.dp</string>
-    <string name="pic_frame_border_color">Black</string>
 </resources>

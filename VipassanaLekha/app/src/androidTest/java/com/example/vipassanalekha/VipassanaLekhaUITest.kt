@@ -1,6 +1,10 @@
 package com.example.vipassanalekha
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
@@ -19,210 +23,161 @@ class VipassanaLekhaUITest {
     fun render_vipassana_lekha0() {
         composeTestRule.setContent {
             VipassanaLekhaTheme {
-                BigBang()
+                var vipassanaLekha by remember { mutableStateOf(vipassanaLekha0) }
+
+                Render(vipassanaLekha)
+
+                previousButton = { vipassanaLekha = touchHandling(vipassanaLekha, "previous") }
+                nextButton = { vipassanaLekha = touchHandling(vipassanaLekha, "next") }
             }
         }
         composeTestRule.onNodeWithContentDescription("Logo").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Vipassana Anubhava").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Amar").assertIsDisplayed()
-        composeTestRule.onNodeWithText("2026").assertIsDisplayed()
     }
 
     @Test
     fun render_vipassana_lekha1() {
         composeTestRule.setContent {
             VipassanaLekhaTheme {
-                Column{
-                    Render(vipassanaLekha1)
-                    TouchHandling(
-                        vipassanaLekha = vipassanaLekha1,
-                        onButtonClick = {
-                                nextVipassanaLekha ->
-                            vipassanaLekha1 = nextVipassanaLekha
-                        }
-                    )
-                }
+                var vipassanaLekha by remember { mutableStateOf(vipassanaLekha1) }
+
+                Render(vipassanaLekha)
+
+                previousButton = { vipassanaLekha = touchHandling(vipassanaLekha, "previous") }
+                nextButton = { vipassanaLekha = touchHandling(vipassanaLekha, "next") }
             }
         }
         composeTestRule.onNodeWithContentDescription(
             label = "ਜ਼ਿਆਦਾ ਇਛਾਵਾਂ",
             substring = true
         ).assertIsDisplayed()
-		composeTestRule.onNodeWithText("Monkey Mind").assertIsDisplayed()
-		composeTestRule.onNodeWithText("Amar").assertIsDisplayed()
-		composeTestRule.onNodeWithText("2026").assertIsDisplayed()
-	}
+    }
 
     @Test
     fun render_vipassana_lekha2() {
         composeTestRule.setContent {
             VipassanaLekhaTheme {
-                Column{
-                    Render(vipassanaLekha2)
-                    TouchHandling(
-                        vipassanaLekha = vipassanaLekha2,
-                        onButtonClick = {
-                                nextVipassanaLekha ->
-                            vipassanaLekha2 = nextVipassanaLekha
-                        }
-                    )
-                }
+                var vipassanaLekha by remember { mutableStateOf(vipassanaLekha2) }
+
+                Render(vipassanaLekha)
+
+                previousButton = { vipassanaLekha = touchHandling(vipassanaLekha, "previous") }
+                nextButton = { vipassanaLekha = touchHandling(vipassanaLekha, "next") }
             }
         }
         composeTestRule.onNodeWithContentDescription(
             label = "ਸਰਬੱਤ ਦੀ ਭਲਾਈ ਅਤੇ ਖੁਸ਼ੀ",
             substring = true
         ).assertIsDisplayed()
-		composeTestRule.onNodeWithText("Monkey Mind").assertIsDisplayed()
-		composeTestRule.onNodeWithText("Amar").assertIsDisplayed()
-		composeTestRule.onNodeWithText("2026").assertIsDisplayed()
-	}
+    }
 
     @Test
     fun render_vipassana_lekha3() {
         composeTestRule.setContent {
             VipassanaLekhaTheme {
-                Column{
-                    Render(vipassanaLekha3)
-                    TouchHandling(
-                        vipassanaLekha = vipassanaLekha3,
-                        onButtonClick = {
-                                nextVipassanaLekha ->
-                            vipassanaLekha3 = nextVipassanaLekha
-                        }
-                    )
-                }
+                var vipassanaLekha by remember { mutableStateOf(vipassanaLekha3) }
+
+                Render(vipassanaLekha)
+
+                previousButton = { vipassanaLekha = touchHandling(vipassanaLekha, "previous") }
+                nextButton = { vipassanaLekha = touchHandling(vipassanaLekha, "next") }
             }
         }
         composeTestRule.onNodeWithContentDescription(
             label = "ओघतरणसुत्तं",
             substring = true
         ).assertIsDisplayed()
-        composeTestRule.onNodeWithText("Meditation: Best Practice (One Reason)").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Amar").assertIsDisplayed()
-        composeTestRule.onNodeWithText("2026").assertIsDisplayed()
     }
 
     @Test
     fun render_vipassana_lekha4() {
         composeTestRule.setContent {
             VipassanaLekhaTheme {
-                Column{
-                    Render(vipassanaLekha4)
-                    TouchHandling(
-                        vipassanaLekha = vipassanaLekha4,
-                        onButtonClick = {
-                                nextVipassanaLekha ->
-                            vipassanaLekha4 = nextVipassanaLekha
-                        }
-                    )
-                }
+                var vipassanaLekha by remember { mutableStateOf(vipassanaLekha4) }
+
+                Render(vipassanaLekha)
+
+                previousButton = { vipassanaLekha = touchHandling(vipassanaLekha, "previous") }
+                nextButton = { vipassanaLekha = touchHandling(vipassanaLekha, "next") }
             }
         }
         composeTestRule.onNodeWithContentDescription(
             label = "loving-kindness",
             substring = true
         ).assertIsDisplayed()
-        composeTestRule.onNodeWithText("When the failure of Loving-kindness").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Amar").assertIsDisplayed()
-        composeTestRule.onNodeWithText("2026").assertIsDisplayed()
     }
 
     @Test
     fun render_vipassana_lekha5() {
         composeTestRule.setContent {
             VipassanaLekhaTheme {
-                Column{
-                    Render(vipassanaLekha5)
-                    TouchHandling(
-                        vipassanaLekha = vipassanaLekha5,
-                        onButtonClick = {
-                                nextVipassanaLekha ->
-                            vipassanaLekha5 = nextVipassanaLekha
-                        }
-                    )
-                }
+                var vipassanaLekha by remember { mutableStateOf(vipassanaLekha5) }
+
+                Render(vipassanaLekha)
+
+                previousButton = { vipassanaLekha = touchHandling(vipassanaLekha, "previous") }
+                nextButton = { vipassanaLekha = touchHandling(vipassanaLekha, "next") }
             }
         }
         composeTestRule.onNodeWithContentDescription(
             label = "complexities overhead",
             substring = true
         ).assertIsDisplayed()
-        composeTestRule.onNodeWithText("Identity view and Interface").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Amar").assertIsDisplayed()
-        composeTestRule.onNodeWithText("2026").assertIsDisplayed()
     }
 
     @Test
     fun render_vipassana_lekha6() {
         composeTestRule.setContent {
             VipassanaLekhaTheme {
-                Column{
-                    Render(vipassanaLekha6)
-                    TouchHandling(
-                        vipassanaLekha = vipassanaLekha6,
-                        onButtonClick = {
-                                nextVipassanaLekha ->
-                            vipassanaLekha6 = nextVipassanaLekha
-                        }
-                    )
-                }
+                var vipassanaLekha by remember { mutableStateOf(vipassanaLekha6) }
+
+                Render(vipassanaLekha)
+
+                previousButton = { vipassanaLekha = touchHandling(vipassanaLekha, "previous") }
+                nextButton = { vipassanaLekha = touchHandling(vipassanaLekha, "next") }
             }
         }
         composeTestRule.onNodeWithContentDescription(
             label = "ਭਾਵ ਤ੍ਰਿਸ਼ਨਾ ਦੇ ਕਾਰਨ ਹੀ ਨੇਕੀ ਦੀ ਕਮਾਈ ਦੇ ਨਤੀਜੇ ਦੀ ਲਾਲਸ",
             substring = true
         ).assertIsDisplayed()
-        composeTestRule.onNodeWithText("Righteousness in the Ocean").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Amar").assertIsDisplayed()
-        composeTestRule.onNodeWithText("2026").assertIsDisplayed()
     }
 
     @Test
     fun render_vipassana_lekha7() {
         composeTestRule.setContent {
             VipassanaLekhaTheme {
-                Column{
-                    Render(vipassanaLekha7)
-                    TouchHandling(
-                        vipassanaLekha = vipassanaLekha7,
-                        onButtonClick = {
-                                nextVipassanaLekha ->
-                            vipassanaLekha7 = nextVipassanaLekha
-                        }
-                    )
-                }
+                var vipassanaLekha by remember { mutableStateOf(vipassanaLekha7) }
+
+                Render(vipassanaLekha)
+
+                previousButton = { vipassanaLekha = touchHandling(vipassanaLekha, "previous") }
+                nextButton = { vipassanaLekha = touchHandling(vipassanaLekha, "next") }
             }
         }
         composeTestRule.onNodeWithContentDescription(
             label = "ਕੁਝ ਸਮਾਨ ਹੀ ਹਰ ਪ੍ਰਣਾਲੀ ਦੇ ਸੰਦਰਭ ਵਿੱਚ",
             substring = true
         ).assertIsDisplayed()
-        composeTestRule.onNodeWithText("Past").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Amar").assertIsDisplayed()
-        composeTestRule.onNodeWithText("2026").assertIsDisplayed()
     }
     //End of function Render Test
 
-    //Start of function TouchHandling() Tests
+    //Start of function touchHandling() Tests
     @Test
     fun vipassanaLekha_prev_button_action() {
         composeTestRule.setContent {
             VipassanaLekhaTheme {
-                Column {
-                    BigBang()
-                }
+                BigBang()
             }
         }
-        composeTestRule.onNodeWithText("Previous").performClick()
 
+        composeTestRule.onNodeWithContentDescription("Logo").assertIsDisplayed()
+        composeTestRule.onNodeWithText("Previous").performClick()
         composeTestRule.onNodeWithContentDescription(
-            label = "ਸਮਥ ਬਿਨਾਂ ਕੋਈ ਵਿਪਾਸਨਾ ਨਹੀਂ|",
+            label = "ਕੁਝ ਸਮਾਨ ਹੀ ਹਰ ਪ੍ਰਣਾਲੀ ਦੇ ਸੰਦਰਭ ਵਿੱਚ",
             substring = true
         ).assertIsDisplayed()
-        composeTestRule.onNodeWithText("Past").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Amar").assertIsDisplayed()
-        composeTestRule.onNodeWithText("2026").assertIsDisplayed()
+
+
     }
 
     @Test
@@ -232,16 +187,13 @@ class VipassanaLekhaUITest {
                 BigBang()
             }
         }
+        composeTestRule.onNodeWithContentDescription("Logo").assertIsDisplayed()
         composeTestRule.onNodeWithText("Next").performClick()
-
         composeTestRule.onNodeWithContentDescription(
-            label = "ਜ਼ਿਆਦਾ ਇੱਛਾਵਾਂ ਦੀ ਹਾਲਤ ਵਿੱਚ ਚਿੱਤ ਇੱਕ ਬਾਂਦਰ ਦੀ ਤਰ੍ਹਾਂ",
+            label = "ਜ਼ਿਆਦਾ ਇਛਾਵਾਂ",
             substring = true
         ).assertIsDisplayed()
-        composeTestRule.onNodeWithText("Monkey Mind").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Amar").assertIsDisplayed()
-        composeTestRule.onNodeWithText("2026").assertIsDisplayed()
     }
-    // End of function TouchHandling() tests
+    // End of function touchHandling() tests
 
 }

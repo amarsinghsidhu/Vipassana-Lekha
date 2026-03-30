@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import androidx.annotation.VisibleForTesting
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -30,14 +31,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.layout.ContentScale.Companion.Fit
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily.Companion.SansSerif
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.vipassanalekha.ui.theme.DarkMolasses
@@ -58,15 +57,17 @@ class VipassanaLekha(
 //	- Text
 //      - Text
 //      - Number
+//      - Buttons
 // interpretation: An Android App with
 //	- Image of an Insight text/writing
 //	- Title of Insight writing
 //	- Content description of image for accessibility through accessibility tools
 //	- Writer of the text
 //	- Year of composition
+//	- Previous and next button
 
 var vipassanaLekha0 = VipassanaLekha(
-    image = R.drawable.vipassanalekha,
+    image = R.drawable.thunder,
     title = R.string.logo,
     description = R.string.logo_description,
     writer = R.string.logo_writer,
@@ -159,23 +160,10 @@ fun BigBang() {
 
     var vipassanaLekha by remember { mutableStateOf(vipassanaLekha0) }
 
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .verticalScroll(rememberScrollState())
-            .background(Ochre),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally,
-    ) {
-        Render(vipassanaLekha)
-        TouchHandling(
-            vipassanaLekha = vipassanaLekha,
-            onButtonClick = {
-                    nextVipassanaLekha ->
-                vipassanaLekha = nextVipassanaLekha
-            }
-        )
-    }
+    Render(vipassanaLekha)
+
+    previousButton = { vipassanaLekha = touchHandling(vipassanaLekha, "previous") }
+    nextButton = { vipassanaLekha = touchHandling(vipassanaLekha, "next") }
 }
 
 // VipassanaLekha -> Image
@@ -189,7 +177,15 @@ fun BigBang() {
 
 @Composable
 fun Render(vipassanaLekha: VipassanaLekha) {
-    Column {
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(rememberScrollState())
+            .background(Ochre),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ) {
 
         Spacer(modifier = Modifier.height(40.dp))
 
@@ -248,7 +244,7 @@ fun Render(vipassanaLekha: VipassanaLekha) {
                         fontFamily = SansSerif,
                         modifier = Modifier.weight(1f)
                     )
-                    Text(text = "|", color = White)
+                    Text(text = "|", color = Ochre)
                     Text(
                         text = vipassanaLekha.year.toString(),
                         color = Ochre,
@@ -259,78 +255,84 @@ fun Render(vipassanaLekha: VipassanaLekha) {
                 }
             }
         }
+        Row (
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(32.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Button(
+                onClick = { previousButton(vipassanaLekha) },
+                modifier = Modifier.weight(1f),
+                shape = RectangleShape,
+                colors = ButtonDefaults.buttonColors(DarkMolasses)
+            ) {
+                Text(
+                    text = stringResource(R.string.prev_button),
+                    color = Ochre
+                )
+            }
+            Button(
+                onClick = { nextButton(vipassanaLekha) },
+                modifier = Modifier.weight(1f),
+                shape = RectangleShape,
+                colors = ButtonDefaults.buttonColors(DarkMolasses)
+            ) {
+                Text(
+                    text = stringResource(R.string.nex_button),
+                    color = Ochre
+                )
+            }
+        }
     }
 }
 
 // VipassanaLekha Touch -> VipassanaLekha
-// With touch on one of the two buttons on screen respective previous or next image with metadata
+// With touch on one of the two buttons on screen, respective previous or next image with metadata
 // In the file "VipassanaLekhaUITests.kt"
-//@Composable
-//fun TouchHandling(
+
+//fun touchHandling(
 //    vipassanaLekha: VipassanaLekha,
-//    onButtonClick: (VipassanaLekha) -> Unit
-//) {
+//    keyEvent: String
+//): VipassanaLekha {
 //
 //}
 
-@Composable
-fun TouchHandling(
+@VisibleForTesting
+internal fun touchHandling(
     vipassanaLekha: VipassanaLekha,
-    onButtonClick: (VipassanaLekha) -> Unit
-) {
-    Row (
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(32.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp)
-    ) {
-        Button(
-            onClick = {
-                val prevVipassanaLekha = when (vipassanaLekha) {
-                    vipassanaLekha0 -> vipassanaLekha7
-                    vipassanaLekha1 -> vipassanaLekha0
-                    vipassanaLekha2 -> vipassanaLekha1
-                    vipassanaLekha3 -> vipassanaLekha2
-                    vipassanaLekha4 -> vipassanaLekha3
-                    vipassanaLekha5 -> vipassanaLekha4
-                    vipassanaLekha6 -> vipassanaLekha5
-                    vipassanaLekha7 -> vipassanaLekha6
-                    else -> vipassanaLekha0
-                }
-                onButtonClick(prevVipassanaLekha)
-            },
-            modifier = Modifier.weight(1f),
-            shape = RectangleShape,
-            colors = ButtonDefaults.buttonColors(DarkMolasses)
-        ) {
-            Text(
-                text = stringResource(R.string.prev_button),
-                color = Ochre
-            )
-        }
-        Button(
-            onClick = {
-                val nextVipassanaLekha = when (vipassanaLekha) {
-                    vipassanaLekha0 -> vipassanaLekha1
-                    vipassanaLekha1 -> vipassanaLekha2
-                    vipassanaLekha2 -> vipassanaLekha3
-                    vipassanaLekha3 -> vipassanaLekha4
-                    vipassanaLekha4 -> vipassanaLekha5
-                    vipassanaLekha5 -> vipassanaLekha6
-                    vipassanaLekha6 -> vipassanaLekha7
-                    vipassanaLekha7 -> vipassanaLekha0
-                    else -> vipassanaLekha0
-                }
-                onButtonClick(nextVipassanaLekha)
-            },
-            modifier = Modifier.weight(1f),
-            shape = RectangleShape,
-            colors = ButtonDefaults.buttonColors(DarkMolasses)
-        ) {
-            Text(
-                text = stringResource(R.string.nex_button),
-                color = Ochre
-            )
+    keyEvent: String
+): VipassanaLekha {
+    val nextVipassanaLekha: VipassanaLekha
+    if(keyEvent == "previous") {
+        nextVipassanaLekha = when (vipassanaLekha) {
+            vipassanaLekha0 -> vipassanaLekha7
+            vipassanaLekha1 -> vipassanaLekha0
+            vipassanaLekha2 -> vipassanaLekha1
+            vipassanaLekha3 -> vipassanaLekha2
+            vipassanaLekha4 -> vipassanaLekha3
+            vipassanaLekha5 -> vipassanaLekha4
+            vipassanaLekha6 -> vipassanaLekha5
+            vipassanaLekha7 -> vipassanaLekha6
+            else -> vipassanaLekha0
         }
     }
+    else {
+        nextVipassanaLekha = when (vipassanaLekha) {
+            vipassanaLekha0 -> vipassanaLekha1
+            vipassanaLekha1 -> vipassanaLekha2
+            vipassanaLekha2 -> vipassanaLekha3
+            vipassanaLekha3 -> vipassanaLekha4
+            vipassanaLekha4 -> vipassanaLekha5
+            vipassanaLekha5 -> vipassanaLekha6
+            vipassanaLekha6 -> vipassanaLekha7
+            vipassanaLekha7 -> vipassanaLekha0
+            else -> vipassanaLekha0
+        }
+    }
+return nextVipassanaLekha
 }
+
+//Additional functions
+var previousButton: (VipassanaLekha) -> Unit = {}
+var nextButton: (VipassanaLekha) -> Unit = {}
